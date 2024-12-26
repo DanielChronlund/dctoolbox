@@ -4003,7 +4003,7 @@ function Invoke-DCConditionalAccessGallery {
 
     $CustomObject = New-Object -TypeName psobject
     $CustomObject | Add-Member -MemberType NoteProperty -Name "Id" -Value "1030"
-    $CustomObject | Add-Member -MemberType NoteProperty -Name "Name" -Value "$AddCustomPrefix`GLOBAL - 1030 - BLOCK - Unsupported Device Platforms"
+    $CustomObject | Add-Member -MemberType NoteProperty -Name "Name" -Value "$AddCustomPrefix`GLOBAL - 1030 - BLOCK - Unsupported Device Platforms (including Linux)"
     $CustomObject | Add-Member -MemberType NoteProperty -Name "Description" -Value "Block unsupported platforms like Windows Phone, Linux, and other OS variants. Note: Device platform detection is a best effort security signal based on the user agent string and can be spoofed. Always combine this with additional signals like MFA and/or device authentication."
     $CustomObject | Add-Member -MemberType NoteProperty -Name "JsonTemplate" -Value @"
 {
@@ -4074,7 +4074,7 @@ function Invoke-DCConditionalAccessGallery {
 
     $CustomObject = New-Object -TypeName psobject
     $CustomObject | Add-Member -MemberType NoteProperty -Name "Id" -Value "1031"
-    $CustomObject | Add-Member -MemberType NoteProperty -Name "Name" -Value "$AddCustomPrefix`GLOBAL - 1031 - BLOCK - Unsupported Device Platforms (including Linux)"
+    $CustomObject | Add-Member -MemberType NoteProperty -Name "Name" -Value "$AddCustomPrefix`GLOBAL - 1031 - BLOCK - Unsupported Device Platforms"
     $CustomObject | Add-Member -MemberType NoteProperty -Name "Description" -Value "Block unsupported platforms like Windows Phone, and other OS variants. Note: Device platform detection is a best effort security signal based on the user agent string and can be spoofed. Always combine this with additional signals like MFA and/or device authentication."
     $CustomObject | Add-Member -MemberType NoteProperty -Name "JsonTemplate" -Value @"
 {
