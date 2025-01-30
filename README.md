@@ -1,3 +1,6 @@
+CSTijgers folder contains new module with device-filter functionality included, Invoke-DCConditionalAccessSimulationWithDevices @parameters
+
+
 # DCToolbox
 
 A PowerShell toolbox for Microsoft 365 security fans.
