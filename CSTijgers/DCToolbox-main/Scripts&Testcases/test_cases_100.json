@@ -1,0 +1,1002 @@
+[
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "CN",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "CN",
+        "Platform": "windows",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "other",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "DE",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "KP",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "SE",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "DE",
+        "Platform": "ios",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "other",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "SE",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "other",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "RU",
+        "Platform": "linux",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "RU",
+        "Platform": "windows",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "DE",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "RU",
+        "Platform": "windows",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "DE",
+        "Platform": "linux",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "browser",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "IT",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "IT",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "IT",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "KP",
+        "Platform": "linux",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "IR",
+        "Platform": "android",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "RU",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "NL",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "SY",
+        "Platform": "android",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "browser",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "IR",
+        "Platform": "windows",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "other",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "CN",
+        "Platform": "android",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "browser",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "CN",
+        "Platform": "android",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "browser",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "BE",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "BE",
+        "Platform": "android",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "browser",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "KP",
+        "Platform": "windows",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "other",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "FR",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "DE",
+        "Platform": "windows",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "BE",
+        "Platform": "ios",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "CN",
+        "Platform": "linux",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "other",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "IR",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "SY",
+        "Platform": "linux",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "IR",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "other",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "CN",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "BE",
+        "Platform": "linux",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "browser",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "CN",
+        "Platform": "ios",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "ES",
+        "Platform": "linux",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "KP",
+        "Platform": "android",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "SY",
+        "Platform": "windows",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "other",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "IT",
+        "Platform": "windows",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "CN",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "DE",
+        "Platform": "linux",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "other",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "ES",
+        "Platform": "windows",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "ES",
+        "Platform": "android",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "other",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "KP",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "IR",
+        "Platform": "windows",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "browser",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "FR",
+        "Platform": "windows",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "browser",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "NL",
+        "Platform": "linux",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "browser",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "NL",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "other",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "SE",
+        "Platform": "linux",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "BE",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "CN",
+        "Platform": "windows",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "SE",
+        "Platform": "linux",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "DE",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "other",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "KP",
+        "Platform": "windows",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "BE",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "BE",
+        "Platform": "android",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "IR",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "other",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "BE",
+        "Platform": "linux",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "DE",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "SY",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "ES",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "ES",
+        "Platform": "windows",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "other",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "IT",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "other",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "BE",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "browser",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "FR",
+        "Platform": "android",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "browser",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "RU",
+        "Platform": "windows",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "other",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "ES",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "other",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "CN",
+        "Platform": "windows",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "RU",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "browser",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "FR",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "IT",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "BE",
+        "Platform": "windows",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "IR",
+        "Platform": "android",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "ES",
+        "Platform": "windows",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "IR",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "other",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "IT",
+        "Platform": "linux",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "SE",
+        "Platform": "android",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "other",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "SY",
+        "Platform": "linux",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "browser",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "CN",
+        "Platform": "ios",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "DE",
+        "Platform": "android",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "IR",
+        "Platform": "android",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "CN",
+        "Platform": "android",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "other",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "CN",
+        "Platform": "windows",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "ES",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "other",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "FR",
+        "Platform": "windows",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "CN",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "browser",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "SE",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "other",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "BE",
+        "Platform": "linux",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "browser",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "CN",
+        "Platform": "linux",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "IT",
+        "Platform": "linux",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "BE",
+        "Platform": "ios",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "browser",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "IR",
+        "Platform": "android",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "browser",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "BE",
+        "Platform": "android",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "medium"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "SE",
+        "Platform": "windows",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "other",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "low",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "SY",
+        "Platform": "linux",
+        "ApplicationDisplayName": "All",
+        "ClientApp": "mobileAppsAndDesktopClients",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "user@example.com",
+        "Country": "FR",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Office 365",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "low"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "FR",
+        "Platform": "macOS",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "easSupported",
+        "TrustedIPAddress": false,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "All",
+        "Country": "KP",
+        "Platform": "ios",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "other",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "high",
+        "UserRiskLevel": "high"
+    },
+    {
+        "UserPrincipalName": "GuestsOrExternalUsers",
+        "Country": "KP",
+        "Platform": "android",
+        "ApplicationDisplayName": "Microsoft Admin Portals",
+        "ClientApp": "exchangeActiveSync",
+        "TrustedIPAddress": true,
+        "SignInRiskLevel": "medium",
+        "UserRiskLevel": "medium"
+    }
+]

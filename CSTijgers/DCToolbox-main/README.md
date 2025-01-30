@@ -1,6 +1,3 @@
-CSTijgers folder contains new module with device-filter functionality included, Invoke-DCConditionalAccessSimulationWithDevices @parameters
-
-
 # DCToolbox
 
 A PowerShell toolbox for Microsoft 365 security fans.
@@ -58,7 +55,7 @@ You can filter on a name prefix with -PrefixFilter.
 **Parameters:**
 
 	-PrefixFilter
-	Description:	Only modify the policies with this prefix. The filter is case sensitive.
+	Description:	Only modify the policies with this prefix.
 	Required:		false
 	
 	-ExcludeGroupName
@@ -179,7 +176,7 @@ Automatically deploy the latest version of the Conditional Access policy design 
 
 **Details:**
 
-Automatically deploy the latest version of the Conditional Access policy design baseline from https://danielchronlund.com. It creates all necessary dependencies like exclusion groups, named locations, and terms of use, and then deploys all Conditional Access policies in the baseline.
+This CMDlet downloads the latest version of the Conditional Access policy design baseline from https://danielchronlund.com/2020/11/26/azure-ad-conditional-access-policy-design-baseline-with-automatic-deployment-support/. It creates all necessary dependencies like exclusion groups, named locations, and terms of use, and then deploys all Conditional Access policies in the baseline.
 
 All Conditional Access policies created by this CMDlet will be set to report-only mode.
 
@@ -193,8 +190,28 @@ You must be a Global Admin to run this command (because of the admin consent req
 	Description:	Adds a custom prefix to all policy names.
 	Required:		false
 	
-	-CreateDocumentation
-	Description:	Creates a Markdown documentation of the baseline.
+	-ExcludeGroupDisplayName
+	Description:	Set a custom name for the break glass exclude group. Default: 'Excluded from Conditional Access'. You can set this to an existing group if you already have one.
+	Required:		false
+	
+	-ServiceAccountGroupDisplayName
+	Description:	Set a custom name for the service account group. Default: 'Conditional Access Service Accounts'. You can set this to an existing group if you already have one.
+	Required:		false
+	
+	-NamedLocationCorpNetwork
+	Description:	Set a custom name for the corporate network named location. Default: 'Corporate Network'. You can set this to an existing named location if you already have one.
+	Required:		false
+	
+	-NamedLocationAllowedCountries
+	Description:	Set a custom name for the allowed countries named location. Default: 'Allowed Countries'. You can set this to an existing named location if you already have one.
+	Required:		false
+	
+	-TermsOfUseName
+	Description:	Set a custom name for the terms of use. Default: 'Terms of Use'. You can set this to an existing Terms of Use if you already have one.
+	Required:		false
+	
+	-SkipPolicies
+	Description:	Specify one or more policy names in the baseline that you want to skip.
 	Required:		false
 	
 	-SkipReportOnlyMode
@@ -207,10 +224,19 @@ You must be a Global Admin to run this command (because of the admin consent req
 	Deploy-DCConditionalAccessBaselinePoC
 	    
 	Deploy-DCConditionalAccessBaselinePoC -AddCustomPrefix 'PILOT - '
+	Deploy-DCConditionalAccessBaselinePoC @Parameters    
+	# Customize names of dependencies.
+	$Parameters = @{
+	    ExcludeGroupDisplayName = 'Excluded from Conditional Access'
+	    ServiceAccountGroupDisplayName = 'Conditional Access Service Accounts'
+	    NamedLocationCorpNetwork = 'Corporate Network'
+	    NamedLocationAllowedCountries = 'Allowed Countries'
+	    TermsOfUseName = 'Terms of Use'
+	}
 	    
-	Deploy-DCConditionalAccessBaselinePoC -CreateDocumentation
+	Deploy-DCConditionalAccessBaselinePoC -SkipPolicies "GLOBAL - BLOCK - High-Risk Sign-Ins", "GLOBAL - BLOCK - High-Risk Users", "GLOBAL - GRANT - Medium-Risk Sign-Ins", "GLOBAL - GRANT - Medium-Risk Users"
 	    
-	Deploy-DCConditionalAccessBaselinePoC -SkipReportOnlyMode # Use with caution!
+	Deploy-DCConditionalAccessBaselinePoC -SkipReportOnlyMode # WARNING: USE WITH CAUTION!
 
 ---
 
@@ -272,7 +298,7 @@ The user running this CMDlet (the one who signs in when the authentication pops 
 	Required:		false
 	
 	-PrefixFilter
-	Description:	Only export the policies with this prefix. The filter is case sensitive.
+	Description:	Only export the policies with this prefix.
 	Required:		false
 	
 **Examples:**
@@ -308,7 +334,7 @@ You can filter on a name prefix with -PrefixFilter.
 **Parameters:**
 
 	-PrefixFilter
-	Description:	Only show the policies with this prefix. The filter is case sensitive.
+	Description:	Only show the policies with this prefix.
 	Required:		false
 	
 	-ShowTargetResources
@@ -408,7 +434,7 @@ You can filter on a name prefix with -PrefixFilter.
 **Parameters:**
 
 	-PrefixFilter
-	Description:	Only show the named locations with this prefix. The filter is case sensitive.
+	Description:	Only show the named locations with this prefix.
 	Required:		false
 	
 **Examples:**
@@ -493,7 +519,7 @@ As a best practice you should always have an Entra ID security group with break 
 	Required:		false
 	
 	-PrefixFilter
-	Description:	Only import (and delete) the policies with this prefix in the JSON file. The filter is case sensitive.
+	Description:	Only import (and delete) the policies with this prefix in the JSON file.
 	Required:		false
 	
 **Examples:**
@@ -560,45 +586,6 @@ Check, install, and update the DCToolbox PowerShell module.
 	Install-DCToolbox
 	    
 	Install-DCToolbox -Verbose
-
----
-
-### Invoke-DCConditionalAccessGallery
-
-**Synopsis:**
-
-Select policies from a list of Entra ID Conditional Access templates, and deploy them in report-only mode.
-
-**Details:**
-
-Select policies from a list of Entra ID Conditional Access templates, and deploy them in report-only mode.
-
-The script will automatically create any missing groups, named locations, country lists, and terms of use, and replace the names in the JSON with the corresponding IDs.
-
-It will also output the result of the policy creation in JSON-format.
-
-**Parameters:**
-
-	-AddCustomPrefix
-	Description:	Adds a custom prefix to all policy names.
-	Required:		false
-	
-	-AutoDeployIds
-	Description:	Specify list of policy IDs to auto-deploy (non-interactive deployment). This parameter is only used for automated deployments.
-	Required:		false
-	
-	-SkipDocumentation
-	Description:	Skip the documentation part of the script. There will be no Markdown file produced.
-	Required:		false
-	
-**Examples:**
-
-	    
-	Invoke-DCConditionalAccessGallery
-	    
-	Invoke-DCConditionalAccessGallery -AddCustomPrefix 'PILOT - '
-	    
-	Invoke-DCConditionalAccessGallery -SkipDocumentation -AutoDeployIds 1010, 1020, 1030, 2010, 2020
 
 ---
 
@@ -1121,7 +1108,7 @@ This CMDlet will prompt you for confirmation multiple times before deleting poli
 **Parameters:**
 
 	-PrefixFilter
-	Description:	Only delete the policies with this prefix. The filter is case sensitive.
+	Description:	Only delete the policies with this prefix.
 	Required:		false
 	
 **Examples:**
@@ -1148,12 +1135,12 @@ If you dontt specify a PrefixFilter, ALL policies will be modified to include th
 **Parameters:**
 
 	-PrefixFilter
-	Description:	Only toggle the policies with this prefix. The filter is case sensitive.
+	Description:	Only toggle the policies with this prefix.
 	Required:		false
 	
 	-AddCustomPrefix
 	Description:	Adds a custom prefix to all policy names.
-	Required:		false
+	Required:		true
 	
 **Examples:**
 
@@ -1183,7 +1170,7 @@ You must filter the toggle with a prefix filter to only modify specific policies
 **Parameters:**
 
 	-PrefixFilter
-	Description:	Only toggle the policies with this prefix. The filter is case sensitive.
+	Description:	Only toggle the policies with this prefix.
 	Required:		true
 	
 	-PilotGroupName
@@ -1224,7 +1211,7 @@ You must filter the toggle with a prefix filter to only modify specific policies
 **Parameters:**
 
 	-PrefixFilter
-	Description:	Only toggle the policies with this prefix. The filter is case sensitive.
+	Description:	Only toggle the policies with this prefix.
 	Required:		true
 	
 	-SetToReportOnly
@@ -1344,6 +1331,6 @@ Do not use this script in an unethical or unlawful way. Use it to find weak spot
 ---
 
 
-Please follow me on my blog https://danielchronlund.com and on LinkedIn!
+Please follow me on my blog https://danielchronlund.com, on LinkedIn and on X!
 
 @DanielChronlund

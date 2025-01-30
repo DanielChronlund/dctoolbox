@@ -1,0 +1,1186 @@
+[
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "exchangeActiveSync",
+        "other"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 101 - BLOCK - Legacy Authentication",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "block"
+      ],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": null
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "authenticationFlows": {
+        "transferMethods": "deviceCodeFlow,authenticationTransfer"
+      },
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 102 - BLOCK - Device Code Auth Flow",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "block"
+      ],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": null
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": {
+        "includePlatforms": [
+          "all"
+        ],
+        "excludePlatforms": [
+          "android",
+          "iOS",
+          "windows",
+          "macOS"
+        ]
+      },
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 103 - BLOCK - Unsupported Device Platforms",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "block"
+      ],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": null
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "locations": {
+        "excludeLocations": [
+          "REPLACE WITH ALLOWED COUNTRIES NAMED LOCATION ID"
+        ],
+        "includeLocations": [
+          "All"
+        ]
+      },
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 104 - BLOCK - Countries not Allowed",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "block"
+      ],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": null
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "locations": {
+        "excludeLocations": [
+          "REPLACE WITH SERVICE ACCOUNT TRUSTED NAMED LOCATION ID"
+        ],
+        "includeLocations": [
+          "All"
+        ]
+      },
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [
+          "REPLACE WITH SERVICE ACCOUNT GROUP ID"
+        ],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 105 - BLOCK - Service Accounts (Trusted Locations Excluded)",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "block"
+      ],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": null
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "None"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 106 - BLOCK - Explicitly Blocked Cloud Apps",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "block"
+      ],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": null
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": {
+          "externalTenants": {
+            "membershipKind": "all",
+            "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants"
+          },
+          "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider"
+        },
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "MicrosoftAdminPortals",
+          "797f4846-ba00-4fd7-ba43-dac1f8f63013"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 107 - BLOCK - Guest Access to Sensitive Apps",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "block"
+      ],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": null
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": [
+        "high"
+      ]
+    },
+    "displayName": "GLOBAL - 108 - BLOCK - High-Risk Sign-Ins",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "block"
+      ],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": null
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [
+        "high"
+      ],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 109 - BLOCK - High-Risk Users",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "block"
+      ],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": null
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": [
+        "medium"
+      ]
+    },
+    "displayName": "GLOBAL - 201 - GRANT - Medium-Risk Sign-ins",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": {
+        "id": "00000000-0000-0000-0000-000000000002"
+      }
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [
+        "medium"
+      ],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 202 - GRANT - Medium-Risk Users",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": {
+        "id": "00000000-0000-0000-0000-000000000002"
+      }
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [
+          "urn:user:registerdevice"
+        ],
+        "includeApplications": [],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 203 - GRANT - Device Registration",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": {
+        "id": "00000000-0000-0000-0000-000000000002"
+      }
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID",
+          "REPLACE WITH SERVICE ACCOUNT GROUP ID"
+        ],
+        "excludeRoles": [
+          "d29b2b05-8046-44ba-8758-1e26182fcf32"
+        ],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 204 - GRANT - Terms of Use",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [
+        "30dc641e-326e-4574-b788-8cd2ae54316f"
+      ],
+      "authenticationStrength": null
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID",
+          "REPLACE WITH SERVICE ACCOUNT GROUP ID"
+        ],
+        "excludeRoles": [
+          "d29b2b05-8046-44ba-8758-1e26182fcf32"
+        ],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [
+          "0000000a-0000-0000-c000-000000000000"
+        ],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 205 - GRANT - MFA for All Users",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": {
+        "id": "00000000-0000-0000-0000-000000000002"
+      }
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID",
+          "REPLACE WITH SERVICE ACCOUNT GROUP ID"
+        ],
+        "excludeRoles": [
+          "d29b2b05-8046-44ba-8758-1e26182fcf32"
+        ],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "mobileAppsAndDesktopClients"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 206 - GRANT - Mobile Apps and Desktop Clients",
+    "state": "disabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "compliantDevice"
+      ],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": null
+    }
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": {
+        "includePlatforms": [
+          "android",
+          "iOS"
+        ],
+        "excludePlatforms": []
+      },
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID",
+          "REPLACE WITH SERVICE ACCOUNT GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "mobileAppsAndDesktopClients"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [
+          "0000000a-0000-0000-c000-000000000000"
+        ],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 207 - GRANT - Mobile Device Access Requirements",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "compliantApplication"
+      ],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": null
+    }
+  },
+  {
+    "sessionControls": {
+      "signInFrequency": {
+        "frequencyInterval": "timeBased",
+        "type": "hours",
+        "value": 9,
+        "isEnabled": true,
+        "authenticationType": "primaryAndSecondaryAuthentication"
+      },
+      "cloudAppSecurity": null,
+      "secureSignInSession": null,
+      "disableResilienceDefaults": null,
+      "applicationEnforcedRestrictions": null,
+      "persistentBrowser": {
+        "mode": "never",
+        "isEnabled": true
+      },
+      "continuousAccessEvaluation": null
+    },
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": [
+          "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+          "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+          "158c047a-c907-4556-b7ef-446551a6b5f7",
+          "17315797-102d-40b4-93e0-432062caca18",
+          "e6d1a23a-da11-4be4-9570-befc86d067a7",
+          "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+          "62e90394-69f5-4237-9190-012177145e10",
+          "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+          "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+          "e8611ab8-c189-46e8-94e1-60213ab1f814",
+          "194ae4cb-b126-40b2-bd5b-6091b380977d"
+        ]
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 301 - SESSION - Admin Persistence",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": null
+  },
+  {
+    "sessionControls": {
+      "signInFrequency": {
+        "frequencyInterval": "timeBased",
+        "type": "hours",
+        "value": 9,
+        "isEnabled": true,
+        "authenticationType": "primaryAndSecondaryAuthentication"
+      },
+      "cloudAppSecurity": null,
+      "secureSignInSession": null,
+      "disableResilienceDefaults": null,
+      "applicationEnforcedRestrictions": null,
+      "persistentBrowser": {
+        "mode": "never",
+        "isEnabled": true
+      },
+      "continuousAccessEvaluation": null
+    },
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": {
+        "excludeDevices": [],
+        "excludeDeviceStates": [],
+        "includeDevices": [],
+        "includeDeviceStates": [],
+        "deviceFilter": {
+          "mode": "exclude",
+          "rule": "device.isCompliant -eq True"
+        }
+      },
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "All"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 302 - SESSION - BYOD Persistence",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": null
+  },
+  {
+    "sessionControls": {
+      "signInFrequency": {
+        "frequencyInterval": "everyTime",
+        "type": null,
+        "value": null,
+        "isEnabled": true,
+        "authenticationType": "primaryAndSecondaryAuthentication"
+      },
+      "cloudAppSecurity": null,
+      "secureSignInSession": null,
+      "disableResilienceDefaults": null,
+      "applicationEnforcedRestrictions": null,
+      "persistentBrowser": null,
+      "continuousAccessEvaluation": null
+    },
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [
+          "urn:user:registersecurityinfo"
+        ],
+        "includeApplications": [],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 303 - SESSION - Register Security Info Requirements",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": null
+  },
+  {
+    "sessionControls": {
+      "signInFrequency": null,
+      "cloudAppSecurity": null,
+      "secureSignInSession": null,
+      "disableResilienceDefaults": null,
+      "applicationEnforcedRestrictions": {
+        "isEnabled": true
+      },
+      "persistentBrowser": null,
+      "continuousAccessEvaluation": null
+    },
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [
+          "REPLACE WITH EXCLUDE GROUP ID"
+        ],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": {
+        "excludeDevices": [],
+        "excludeDeviceStates": [],
+        "includeDevices": [],
+        "includeDeviceStates": [],
+        "deviceFilter": {
+          "mode": "exclude",
+          "rule": "device.isCompliant -eq True"
+        }
+      },
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "00000003-0000-0ff1-ce00-000000000000"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "GLOBAL - 304 - SESSION - Block File Downloads On Unmanaged Devices",
+    "state": "enabled",
+    "templateId": null,
+    "grantControls": null
+  },
+  {
+    "sessionControls": null,
+    "conditions": {
+      "platforms": null,
+      "userRiskLevels": [],
+      "clientApplications": null,
+      "times": null,
+      "deviceStates": null,
+      "users": {
+        "includeGuestsOrExternalUsers": null,
+        "includeGroups": [],
+        "excludeGuestsOrExternalUsers": null,
+        "includeUsers": [
+          "None"
+        ],
+        "excludeUsers": [],
+        "excludeGroups": [],
+        "excludeRoles": [],
+        "includeRoles": []
+      },
+      "devices": null,
+      "locations": null,
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "applicationFilter": null,
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeApplications": [
+          "None"
+        ],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "signInRiskLevels": []
+    },
+    "displayName": "OVERRIDE - 001 - GRANT - Example",
+    "state": "disabled",
+    "templateId": null,
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "mfa"
+      ],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": null
+    }
+  }
+]
