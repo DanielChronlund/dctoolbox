@@ -1,0 +1,37 @@
+$jsonFilePath = "C:\Users\ramaz\Desktop\jsonTestCases\100_test_cases_with_deviceFilters.json"
+
+# Load file
+$testCases = Get-Content -Path $jsonFilePath | ConvertFrom-Json
+
+# Loop
+foreach ($testCase in $testCases) {
+    $Parameters = @{
+        UserPrincipalName = $testCase.UserPrincipalName
+        ApplicationDisplayName = $testCase.ApplicationDisplayName
+        ClientApp = $testCase.ClientApp
+        TrustedIPAddress = [bool]$testCase.TrustedIPAddress
+        Country = $testCase.Country
+        Platform = $testCase.Platform
+        SignInRiskLevel = $testCase.SignInRiskLevel
+        UserRiskLevel = $testCase.UserRiskLevel
+        SummarizedOutput = $true
+        VerbosePolicyEvaluation = $false
+        IncludeNonMatchingPolicies = $false
+        DeviceId = $testCase.DeviceId
+        DisplayName = $testCase.DisplayName
+        DeviceOwnership = $testCase.DeviceOwnership
+        EnrollmentProfileName = $testCase.EnrollmentProfileName
+        IsCompliant = $testCase.IsCompliant
+        Manufacturer = $testCase.Manufacturer
+        MdmAppId = $testCase.MdmAppId
+        Model = $testCase.Model
+        OperatingSystem = $testCase.OperatingSystem
+        OperatingSystemVersion = $testCase.OperatingSystemVersion
+        PhysicalIds = $testCase.PhysicalIds
+        ProfileType = $testCase.ProfileType
+        SystemLabels = $testCase.SystemLabels
+        TrustType = $testCase.TrustType
+    }
+    Write-Host "Running test case for user: $($testCase.UserPrincipalName)"
+    Invoke-DCConditionalAccessSimulationWithDevices @Parameters
+}
